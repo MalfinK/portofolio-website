@@ -1,0 +1,165 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 1500px;
+}
+
+hr {
+    width: 10%;
+    border-top: 3px solid rgb(68, 255, 0);
+}
+
+section {
+    min-height: 600px;
+}
+
+/* navabr */
+.home {
+    margin-right: 20px;
+}
+
+.nav-link {
+    color: rgb(136, 0, 255) !important;
+    margin-right: 30px;
+    text-transform: uppercase;
+}
+
+.active {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.bg-dark,
+.navbar-dark,
+.navbar-light {
+    transition: 1s ease;
+}
+
+.warna-tulisan {
+    color: green !important;
+}
+
+/* jumbotron */
+.jumbotron {
+    background-image: url(img/bacground\ jumb.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 0 -15px;
+    color: aliceblue;
+    min-height: 52rem;
+    margin-top: -15rem;
+}
+
+.jumbotron img {
+    width: 200px;
+    border: 10px double rgb(133, 133, 253);
+    border-radius: 30px !important;
+    margin-top: 80%;
+}
+
+.jumbotron h1 {
+    margin-top: 2%;
+}
+
+.teks-away {
+    margin-bottom: 24px;
+    border-radius: 10px;
+    /* background-image: url(img/bg\ teks\ jalan.jpg); */
+    padding: 5px;
+    font-weight: bold;
+    color: rgb(81, 125, 245);
+}
+
+/* about me */
+.aboutMe {
+    margin-top: -7%;
+    /* padding-top: 6%; */
+    background-color: #67B3E4;
+}
+
+/* information */
+.information {
+    min-height: 800px;
+    padding-top: 5%;
+    background-color: #95A3E0;
+    text-align: justify;
+}
+
+em.key,
+em.key2,
+em.key3,
+em.key4 {
+    display: none;
+}
+
+/* portfolio */
+.portfolio {
+    /* min-height: 600px; */
+    padding-top: 4%;
+    background-color: #67B3E4;
+    text-align: justify;
+}
+
+.portfolio .card {
+    min-height: 500px;
+    /* margin-right: 10px; */
+    margin: 20px auto;
+    border-radius: 20px;
+}
+
+.portfolio .card img {
+    border-radius: 20px;
+    width: 100%;
+    position: relative;
+}
+
+.portfolio .btn {
+    margin: 20px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+/* footer */
+footer {
+    position: absolute;
+    bottom: 0;
+    /* Biar dia nempel di bawah liat pada css layouting di position*/
+    width: 100%;
+    /* Lebar */
+    height: 120px;
+    /* Tinggi */
+    background-color: #333;
+    padding-top: 30px;
+}
+
+footer p {
+    color: #aaa;
+    font-size: 0.9em;
+}
+
+footer p .bintang {
+    color: yellow;
+}
+
+/* umum */
+.pKiri,
+.pKanan {
+    opacity: 0;
+    transform: translate(-50px, 0) rotate(15deg);
+    /* Property disamping memiliki 2 value yaitu posisi secara horizontal (kiri kanan) dan posisi secara vertikal (atas bawah). */
+    transition: 1s;
+}
+
+.pKanan {
+    transform: translate(50px, 0) rotate(-15deg);
+    /* Property disamping memiliki 2 value yaitu posisi secara horizontal (kiri kanan) dan posisi secara vertikal (atas bawah). */
+}
+
+.pKiri.pMuncul,
+.pKanan.pMuncul {
+    opacity: 1;
+    transform: translate(0, 0);
+}

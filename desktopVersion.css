@@ -1,0 +1,64 @@
+@media (min-width: 1200px) { 
+    hr {
+        width: 20%;
+        border-top: 3px solid rgb(255, 230, 0);
+    }
+    
+    /* navbar */
+    .nav-link {
+        text-transform: uppercase;
+        color: rgb(26, 235, 228) !important;
+        margin-right: 30px;
+    }
+
+    /* jumbotron */
+    .jumbotron {
+        background-image: url(img/bacground\ jumb.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: 0 -90px;
+        color: rgb(240, 255, 252) !important;
+        height: 50rem;
+    }
+    
+    .jumbotron img {
+        margin-top: 15%;
+    }
+
+    /* about me */
+    .aboutMe {
+        /* padding-top: 3%; */
+        margin-top: -3%;
+    }
+
+    /* information */
+    .information{
+        /* padding-top: 4%; */
+        padding-top: 5%;
+    }
+
+    /* portfolio */
+    .portfolio {
+        /* padding-top: 8%; */
+        min-height: 800px;
+    }
+
+    .portfolio .card {
+        min-height: 900vh;
+        margin-right: 10px;
+        border-radius: 20px;
+    }
+    
+    .portfolio .card img {
+        border-radius: 20px;
+        width: 100%;
+        position: relative;
+    }
+    
+    .portfolio .btn {
+        margin: 10px;
+        position: relative;
+        bottom: 0;
+        left: 0;
+    }
+}
